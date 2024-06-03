@@ -1,2 +1,2 @@
-# Jogo-Adivinhe
- Adivinhar o número em Java
+# Jogo_adivinhar_numero
+ Jogo em Java 

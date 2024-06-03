@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o Número Jogo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body onload="inicial()">
+    <main>
+        <div id="boasvindas"> 
+        <h2> Adivinhe o Número <br>entre 1-100</h2> 
+        <section>
+        <p> Selecione o grau de dificuldade:</p>
+        <div class="botao-dificuldade">
+            <button onclick="modofacil()">Fácil:10 tentativas</button>
+            <button onclick="mododificil()">Dificil: 5 tentativas</button>
+            </div>
+                </section>
+                </div>
+    <div id="areaJogo">
+        <button id="novoJogoBotao" onclick="novoJogo()">Novo Jogo</button>
+        <section> 
+            <h3 id="textosaida"> Seu palpite:</h3>
+            <input type="number" id="caixaentrada" min="1" max="100" onchange="compareadv()">
+        </section>
+        <section>  
+        <p> Intervalo Atual:</p>
+            <span id="saidaIntervalo">1-100</span>
+            <div id="intervalo">
+            <span id="baixo"> </span>
+            <span id="espaco"> </span>
+            <span id="alto"> </span>
+            </div>
+        </section>
+        <section class="estatistica">    
+        <div class="info"> 
+        <p>Numero de tentativas feitas:</p>
+        <span id="tentativas">0</span>
+           </div> 
+        <div class="info">  
+        <p>Seus Palpites Anteriores:</p>
+            <span id="palpites">-</span>
+                      </div>
+           </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
